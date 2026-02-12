@@ -1,10 +1,103 @@
+/* Reset dasar */
+* {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Body */
 body {
-    font-family: Arial, 'Times New Roman', Times, serif;
-    background-color: hwb(270 99% 0%);
-    margin: 170px;            /* fixed: provide a value */
-    padding: 18px;
-    /* center content — grid is simple and reliable */
-    display: grid;
-    place-items: center;  /* centers both horizontally and vertically */
-    height: 80vh;
+  background-color: #f0f2f5;
+  margin: 0;
+  padding: 20px;
+}
+
+/* Header */
+header h1 {
+  color: #1f2937;
+}
+
+/* Form container */
+.absen-form {
+  background-color: #ffffff;
+  border-radius: 8px;
+}
+
+/* Label */
+.absen-form label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: bold;
+  color: #374151;
+}
+
+/* Input & Select */
+.absen-form input,
+.absen-form select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 16px;
+  border-radius: 6px;
+  border: 1px solid #d1d5db;
+  font-size: 14px;
+}
+
+.absen-form input:focus,
+.absen-form select:focus {
+  outline: none;
+  border-color: #3b82f6;
+}
+
+/* Button */
+.absen-form button {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  background-color: #3b82f6;
+  color: white;
+}
+
+.absen-form button:hover {
+  background-color: #2563eb;
+}
+
+/* Table container */
+.absen-list {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+/* Table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+/* Table header */
+table thead {
+  background-color: #e5e7eb;
+}
+
+table th,
+table td {
+  padding: 12px;
+  text-align: center;
+  border: 1px solid #d1d5db;
+}
+
+/* Zebra effect */
+table tbody tr:nth-child(even) {
+  background-color: #f9fafb;
+}
+
+/* Footer */
+footer {
+  margin-top: 40px;
+  text-align: center;
+  color: #6b7280;
 }
