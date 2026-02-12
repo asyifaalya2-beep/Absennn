@@ -1,0 +1,10 @@
+body {
+    font-family: Arial, 'Times New Roman', Times, serif;
+    background-color: hwb(270 99% 0%);
+    margin: 170px;            /* fixed: provide a value */
+    padding: 18px;
+    /* center content — grid is simple and reliable */
+    display: grid;
+    place-items: center;  /* centers both horizontally and vertically */
+    height: 80vh;
+}

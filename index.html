@@ -1,26 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
-</html>
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Absen Harian</title>
 
     <!-- CSS External -->
+    <link rel="stylesheet" href="css/style.css">
+        <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
+<body>
 
     <!-- Header Content -->
-     <header></header>
+     <header>
+        <h1 class="text-3xl font-bold text-center pb-8">Absen Harian</h1>
+    </header>
 
     <!-- Main Content -->
-    <main></main>
+    <main>
+        <section class="absen-form" style="max-width: 700px; margin: auto; padding: 20px; background-color: #f9f9f9; border-radius: 8px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);">
+            <form id="absenForm">
+                <label for="nama">Nama:</label>
+                <input type="text" id="nama" name="nama" placeholder="Enter Your Name" required>
+                <label for="tanggal">Tanggal:</label>
+                <input type="date" id="tanggal" name="tanggal" required>
 
-    <!-- Footer Content -->
-    <footer></footer>
+                <label for="status">Status:</label>
+                <select id="status" name="status" required>
+                    <option value="Hadir">Hadir</option>
+                    <option value="Sakit">Sakit</option>
+                    <option value="Izin">Izin</option>
+                    <option value="Alfa">Alfa</option>
+                            </select>
+                    
+    <button onclick="addAbsen()" type="button"
+ class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+ Submit
+</button>
+
+
+
+                    </section>
+    <!-- section -->
+    <section class="absen-list mt-8" style="max-width: 700px; margin: auto;">
+        <h2 class="text-2xl font-bold pt-8">Daftar Absen</h2>
+        <table id="absenTable" class="min-w-full bg-white border border-gray-300">
+            <thead>
+                <tr>
+                    <th class="py-2 px-4 border-b border-gray-300">Nama</th>
+                    <th class="py-2 px-4 border-b border-gray-300">Tanggal</th>
+                    <th class="py-2 px-4 border-b border-gray-300">Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Absen entries will be added here dynamically -->
+            </tbody>
+        </table>
+<!-- footer -->
+<footer>
+    <p class="text-center pt-8"></p>
+</footer>
+
+<script src="script.js"></script>
 
     <!-- Javascript External -->
-     <script src="js/script.js"></script>
+
+
+     <script src="script.js"></script>
+</footer>
 </body>
 
 </html>
